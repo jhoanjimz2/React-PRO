@@ -2,13 +2,26 @@
   "name": "jj-my-storybook-components",
   "version": "0.1.0",
   "private": false,
-  "license":"MIT",
-  "typings":"dist/index.d.ts",
-  "main":"dist/index.js",
+  "license": "MIT",
+  "typings": "dist/index.d.ts",
+  "main": "dist/index.js",
   "homepage": "https://jhoan-jimenez.com",
   "repository": {
-    "url": ""
+    "url": "https://github.com/jhoanjimz2/React-PRO/tree/main/13-my-storybook-semantic",
+    "type": "git"
   },
+  "peerDependencies": {
+    "react": ">=18.2.0"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -24,10 +37,12 @@
   },
   "scripts": {
     "start": "storybook dev -p 6006",
-    "build": "storybook build",
+    "build": "yarn clean && tsc && yarn copy-files",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=7e823439e23e"
+    "chromatic": "npx chromatic --project-token=7e823439e23e",
+    "clean": "rimraf dist/",
+    "copy-files": "copyfiles -u 1 src/**/*.css dist/"
   },
   "eslintConfig": {
     "extends": [
@@ -59,9 +74,18 @@
     "@storybook/react-webpack5": "^7.0.6",
     "@storybook/testing-library": "^0.0.14-next.2",
     "chromatic": "^6.17.3",
+    "copyfiles": "^2.4.1",
     "prop-types": "^15.8.1",
+    "rimraf": "^5.0.0",
+    "semantic-release": "^21.0.1",
     "storybook": "^7.0.6"
   },
-  "readme": "ERROR: No README data found!",
-  "_id": "my-storybook@0.1.0"
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ]
 }
