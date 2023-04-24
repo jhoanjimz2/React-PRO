@@ -5887,6 +5887,23 @@ jiti@^1.17.2:
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.18.2.tgz#80c3ef3d486ebf2450d9335122b32d121f2a83cd"
   integrity sha512-QAdOptna2NYiSSpv0O/BwoHBSmz4YhpzJHyi+fnMRTXFjp7B8i/YG5Z8IfusxB1ufjcD2Sre1F3R+nX3fvy7gg==
 
+jj-my-storybook-components@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/jj-my-storybook-components/-/jj-my-storybook-components-1.1.0.tgz#353d40458d3158ad49f01feb831c96da16921a9f"
+  integrity sha512-y2GYITv9//JOMBLI1MBX7ZuN2TqrvN8VaFPp6hWvHawZRlIlzKeNnppuqOqfQW5K9tv8OGbjq/w/mF7NoG3djw==
+  dependencies:
+    "@testing-library/jest-dom" "^5.16.5"
+    "@testing-library/react" "^13.4.0"
+    "@testing-library/user-event" "^13.5.0"
+    "@types/jest" "^27.5.2"
+    "@types/node" "^16.18.24"
+    "@types/react" "^18.0.38"
+    "@types/react-dom" "^18.0.11"
+    react "^18.2.0"
+    react-dom "^18.2.0"
+    typescript "^4.9.5"
+    web-vitals "^2.1.4"
+
 jj-product-card@^1.0.0-rc:
   version "1.0.0-rc"
   resolved "https://registry.yarnpkg.com/jj-product-card/-/jj-product-card-1.0.0-rc.tgz#dceecd30888cd0a36035b15d8e78243d4dd0c1a9"

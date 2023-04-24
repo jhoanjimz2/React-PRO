@@ -1,4 +1,5 @@
 import { ProductButtons, ProductCard, ProductImage, ProductTitle } from 'jj-product-card';
+import { Button, MyLabel } from 'jj-my-storybook-components';
 import './App.css';
 
 
@@ -28,6 +29,8 @@ function App() {
           )
         }
       </ProductCard>
+      <MyLabel label={'Hola Mundo'} size={'h1'} allCaps={false} color={'primary'}/>
+      <Button label={'Click me'} primary/>
     </div>
   );
 }

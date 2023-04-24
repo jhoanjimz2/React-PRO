@@ -7,7 +7,7 @@
   "main": "dist/index.js",
   "homepage": "https://jhoan-jimenez.com",
   "repository": {
-    "url": "https://github.com/jhoanjimz2/React-PRO/tree/main/13-my-storybook-semantic",
+    "url": "https://github.com/jhoanjimz2/my-storybook-semantic",
     "type": "git"
   },
   "peerDependencies": {
