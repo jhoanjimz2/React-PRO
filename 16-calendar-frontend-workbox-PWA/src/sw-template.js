@@ -53,21 +53,21 @@ const bgSyncPlugin = new BackgroundSyncPlugin('posteos-offline', {
 });
 
 registerRoute(
-    new RegExp('https://mern-calendar-jhoan.herokuapp.com/api/events'),
+    new RegExp('http://localhost:4000/api/events'),
     new NetworkFirst({
         plugins: [bgSyncPlugin]
     }),
     'POST'
 )
 registerRoute(
-    new RegExp('https://mern-calendar-jhoan.herokuapp.com/api/events/'),
+    new RegExp('http://localhost:4000/api/events/'),
     new NetworkFirst({
         plugins: [bgSyncPlugin]
     }),
     'DELETE'
 )
 registerRoute(
-    new RegExp('https://mern-calendar-jhoan.herokuapp.com/api/events/'),
+    new RegExp('http://localhost:4000/api/events/'),
     new NetworkFirst({
         plugins: [bgSyncPlugin]
     }),
